@@ -1,0 +1,30 @@
+#back_ground_img{
+    background-image: url('../assets/shoppingcart-1066110386.webp');
+    background-repeat: no-repeat; 
+    background-size: cover;
+} 
+
+.centercard {
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 4%;
+    width: 11cm;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+      }
+
+ion-segment{
+  border-radius: 100px;
+  background-color:white;
+  border: black;
+}
+
+ion-segment-button {
+  --background-checked: RED;
+  --color-checked: var(--ion-color-success-contrast);
+  color: black;
+  
+}
+
+
