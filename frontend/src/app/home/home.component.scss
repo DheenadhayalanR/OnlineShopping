@@ -1,0 +1,14 @@
+.home_innerlayout{
+    display: flex;
+    flex-flow: wrap;
+}
+ion-card{
+    width: 100%;
+    height: 3cm;
+    justify-content: center;
+    align-items: center;
+}
+.iocol{
+    text-align: center;
+    color: green;
+}

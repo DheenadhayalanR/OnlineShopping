@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -6,10 +8,23 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  lists: any =["home","login"]
+  // items :any=''
+  
+  constructor(private router :Router) {
+   
+  }
 
-  segementcontent(event:any){
-    console.log(event.target.value)
+  roufun(item:any){
+      // const evn_text=(event.target as HTMLElement).textContent    
+      if(item=='home'){
+         this.router.navigate(['/home'])
+      }
+      else{
+        this.router.navigate(['/profile'])
+      }
 
   }
+
 }
+

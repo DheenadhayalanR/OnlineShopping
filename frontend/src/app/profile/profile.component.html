@@ -1,0 +1,40 @@
+
+<ion-content class="con">
+
+  <form (ngSubmit)="createProduct()" enctype="multipart/form-data" >
+  <ion-grid class="inputBox">
+    <ion-row >
+      <ion-col >
+        <ion-card class="inputCardBox">
+          <!-- <ion-button>
+
+            <input type="file"  id="file-input" (change)='selectImg($event)' accept="image/png, image/jpeg">
+          </ion-button> -->
+        <!-- </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card> -->
+          <ion-input type="file" (change)="onImageSelected($event)"></ion-input>
+
+          <ion-input placeholder="name" [(ngModel)]="formData.product_name" name="product_name"></ion-input>
+        <!-- </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card> -->
+          
+          <ion-input placeholder="price" [(ngModel)]="formData.product_price" name="product_price"></ion-input>
+        <!-- </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card> -->
+          
+          <ion-input placeholder="descriptions" [(ngModel)]="formData.product_description" name="product_description"></ion-input>
+        </ion-card>
+    
+        <ion-button type="Submit" expand="full">Submit</ion-button>
+       
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </form>
+</ion-content> 

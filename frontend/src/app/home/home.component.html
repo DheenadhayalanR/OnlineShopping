@@ -1,0 +1,14 @@
+<ion-content>
+  <ion-grid>
+    <ion-row  *ngFor="let item of lists">
+      <!-- <ion-card class="home_innerlayout" > -->
+   
+      <ion-col   class="content"> <br><br>{{item.product_img}}<br>{{item.product_name}}<br><br>{{item.product_price}}<br><br>
+        {{item.product_description}}
+ 
+      </ion-col>
+      <!-- </ion-card> -->
+    </ion-row >
+
+  </ion-grid>
+</ion-content>

@@ -1,34 +1,21 @@
-
-<ion-app id="back_ground_img">
-<div >
-    <ion-card class="centercard">
-        <ion-card-header>
-            <ion-segment value="login" >
-                <ion-segment-button value="login" [routerLink]="['/login']" routerLinkActive="router-link-active" >
-                  <ion-label>login</ion-label>
-                </ion-segment-button>
-                <ion-segment-button  value="signup" [routerLink]="['/signup']" routerLinkActive="router-link-active" >
-                  <ion-label>signup</ion-label>
-                </ion-segment-button>
-            </ion-segment>
-        </ion-card-header>
-
-        <ion-content>
-                <ion-router-outlet></ion-router-outlet> 
-        </ion-content>
-     
-           
-</ion-card>
-</div>
-
-
-
-
-
+<ion-app>
+<!-- <div class="outer-layout"> -->
+    <!-- Header layout -->
+    <ion-header class="header" >
+        <ion-title slot="start">On-Shop</ion-title>
+        <!--set row-->
+            <ion-row class="lists" *ngFor="let items of lists">
+                <ion-col  >
+                <button ion-button class="ionbutton" (click)="roufun(items)">{{items}}</button>
+                </ion-col>
+            </ion-row>
+      
+    </ion-header>  
+    <ion-content>
+        <ion-router-outlet></ion-router-outlet> 
+    </ion-content>
 
 
 
 
 </ion-app>
-
-
